@@ -1,6 +1,6 @@
 # example-screenshot-taker
 
-Example screenshot taker is a simple robot which works in the background. It takes screen shots of the primary display and saves that in the `output` directory.
+Example screenshot taker is a simple robot which works in the background. It takes screen shots of the primary display and saves that in the `screenshots` directory.
 
 ## Installation
 
