@@ -11,7 +11,7 @@ import pyautogui
 IS_WIN = True if platform.lower() == "win32" else False
 
 init_filename_index = 0
-OUTPUT_DIR = "screenshots"
+OUTPUT_DIR = f"screenshots_{int(datetime.timestamp(datetime.utcnow()))}"
 FILE_NAME_TEMPLATE = f"{OUTPUT_DIR}/robocorp_recording_"
 TRACK_TARGET_APP = False  # At this moment it is harcoded False, so the target app tracking does not work anyway.
 TARGET_APP = "microsoft edge"
@@ -45,6 +45,7 @@ try:
         exit(-1)
     
     os.mkdir(OUTPUT_DIR)
+    print(f"The robot is taking screenshots in every 5 seconds now. And saving them in {OUTPUT_DIR}. Press Ctrl-C to stop")
         
     while True:
         now_time = datetime.utcnow()

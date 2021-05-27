@@ -1,6 +1,6 @@
 tasks:
   Screen Shot Taker:
-    shell: python screen_shot_taker.py
+    shell: python -m screen_shot_taker.py
 
 condaConfigFile: conda.yaml
 artifactsDir: output
