@@ -12,5 +12,5 @@ However, Screenshot functionality requires the Pillow module. OS X uses the `scr
 
  - Get the robot from github: https://github.com/robocorp/example-screenshot-taker.git
  - Install RCC from: https://github.com/robocorp/rcc#installing-rcc-from-command-line
- - Start by running: rcc run --robot robot.yaml
- - Stop running with Ctrl + C (or it will automatically stop in three hours.)
+ - Start by running: `rcc run`
+ - Stop running with `Ctrl + C` (or it will automatically stop in three hours.)
