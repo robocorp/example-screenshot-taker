@@ -1,0 +1,12 @@
+tasks:
+  Screen Shot Taker:
+    shell: python screen_shot_taker.py
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+    - .gitignore
