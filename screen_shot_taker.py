@@ -46,7 +46,8 @@ def screenshot_task():
             exit(-1)
         
         os.mkdir(OUTPUT_DIR)
-        print(f"The robot is taking screenshots in every 5 seconds now. And saving them in {OUTPUT_DIR}. Press Ctrl-C to stop")
+        print(f"The robot is taking screenshots in every 5 seconds now. And saving them in {OUTPUT_DIR}. Press Ctrl-C to stop",
+              flush=True)
             
         while True:
             now_time = datetime.utcnow()
