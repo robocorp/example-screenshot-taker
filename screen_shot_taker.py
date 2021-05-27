@@ -64,7 +64,7 @@ def screenshot_task():
                 init_time = now_time
                 sleep(1)
     except KeyboardInterrupt:
-        print("You closed the app")
+        print("You closed the app", flush=True)
     except Exception as e:
         print(e)
 
