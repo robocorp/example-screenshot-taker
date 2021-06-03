@@ -10,7 +10,7 @@ import pyautogui
 
 IS_WIN = True if platform.lower() == "win32" else False
 
-OUTPUT_DIR = f"screenshots_{int(datetime.timestamp(datetime.utcnow()))}"
+OUTPUT_DIR = f"{os.getenv('ROBOT_ROOT')}/screenshots_{int(datetime.timestamp(datetime.utcnow()))}"
 FILE_NAME_TEMPLATE = f"{OUTPUT_DIR}/robocorp_recording_"
 TRACK_TARGET_APP = False  # At this moment it is harcoded False, so the target app tracking does not work anyway.
 TARGET_APP = "microsoft edge"
